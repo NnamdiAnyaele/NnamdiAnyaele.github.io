@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="#232323"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </radialGradient>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect width="1800" height="1000" fill="url(#dots)"/>
+
+  <!-- connective edges -->
+  <g fill="none" stroke-width="2">
+    <path d="M 320 500 L 640 260" stroke="#0f766e" stroke-opacity="0.55"/>
+    <path d="M 320 500 L 640 500" stroke="#0f766e" stroke-opacity="0.55"/>
+    <path d="M 320 500 L 640 740" stroke="#0f766e" stroke-opacity="0.55"/>
+    <path d="M 640 260 L 980 380" stroke="#b7791f" stroke-opacity="0.55"/>
+    <path d="M 640 500 L 980 380" stroke="#b7791f" stroke-opacity="0.55"/>
+    <path d="M 640 500 L 980 620" stroke="#b7791f" stroke-opacity="0.55"/>
+    <path d="M 640 740 L 980 620" stroke="#b7791f" stroke-opacity="0.55"/>
+    <path d="M 980 380 L 1320 300" stroke="#c2410c" stroke-opacity="0.55"/>
+    <path d="M 980 380 L 1320 480" stroke="#c2410c" stroke-opacity="0.55"/>
+    <path d="M 980 620 L 1320 480" stroke="#c2410c" stroke-opacity="0.55"/>
+    <path d="M 980 620 L 1320 700" stroke="#c2410c" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- entry node -->
+  <g>
+    <circle cx="320" cy="500" r="34" fill="#0f766e"/>
+    <circle cx="320" cy="500" r="34" fill="none" stroke="#f7f3eb" stroke-opacity="0.25" stroke-width="2"/>
+  </g>
+
+  <!-- gateway/service tier -->
+  <g fill="#1c1c1c" stroke="#b7791f" stroke-width="2">
+    <rect x="600" y="228" width="80" height="64" rx="12"/>
+    <rect x="600" y="468" width="80" height="64" rx="12"/>
+    <rect x="600" y="708" width="80" height="64" rx="12"/>
+  </g>
+
+  <!-- core services tier -->
+  <g fill="#1c1c1c" stroke="#c2410c" stroke-width="2">
+    <circle cx="980" cy="380" r="30"/>
+    <circle cx="980" cy="620" r="30"/>
+  </g>
+
+  <!-- data / downstream tier -->
+  <g fill="none" stroke="#f7f3eb" stroke-opacity="0.65" stroke-width="2">
+    <rect x="1290" y="270" width="60" height="60" rx="10"/>
+    <rect x="1290" y="450" width="60" height="60" rx="10"/>
+    <rect x="1290" y="450" width="60" height="60" rx="10"/>
+    <rect x="1290" y="670" width="60" height="60" rx="10"/>
+  </g>
+  <g fill="#f7f3eb" fill-opacity="0.08">
+    <rect x="1290" y="270" width="60" height="60" rx="10"/>
+    <rect x="1290" y="450" width="60" height="60" rx="10"/>
+    <rect x="1290" y="670" width="60" height="60" rx="10"/>
+  </g>
+
+  <!-- faint distant echo nodes for depth on the right edge -->
+  <g fill="#ffffff" fill-opacity="0.05">
+    <circle cx="1620" cy="200" r="4"/>
+    <circle cx="1680" cy="340" r="3"/>
+    <circle cx="1560" cy="420" r="5"/>
+    <circle cx="1700" cy="560" r="3"/>
+    <circle cx="1610" cy="700" r="4"/>
+    <circle cx="1660" cy="820" r="3"/>
+  </g>
+</svg>
