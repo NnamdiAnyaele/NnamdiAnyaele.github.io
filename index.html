@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nnamdi Anyaele | Backend Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav shell">
+      <a class="brand" href="#top">Nnamdi Anyaele</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-media">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
+        alt="Engineering workspace with multiple screens"
+      >
+    </div>
+
+    <div class="hero-copy shell" id="top">
+      <p class="eyebrow">Backend systems, platform logic, product delivery</p>
+      <h1>Shipping backend systems that keep real products moving.</h1>
+      <p class="lede">
+        I design and build APIs, service workflows, and data models for fintech, mobility, and AI-powered platforms. My recent work spans FastAPI, NestJS, PostgreSQL, Redis, asynchronous processing, search-backed products, and multi-service architectures.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="./assets/Nnamdi_Anyaele_Senior_Backend_CV.pdf">Open backend CV</a>
+        <a class="button secondary" href="https://github.com/NnamdiAnyaele">GitHub</a>
+        <a class="button secondary" href="mailto:anyaelennamdi@gmail.com">Email me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section work" id="work">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Project explorer</h2>
+          <p>Pick a lane and browse the systems I have been building.</p>
+        </div>
+
+        <div class="filters" aria-label="Project categories">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="backend">Backend</button>
+          <button class="filter-button" data-filter="fintech">Fintech</button>
+          <button class="filter-button" data-filter="mobility">Mobility</button>
+          <button class="filter-button" data-filter="ai">AI / Data</button>
+          <button class="filter-button" data-filter="frontend">Frontend</button>
+        </div>
+
+        <div class="work-layout">
+          <div class="project-list" id="project-list" aria-label="Project list"></div>
+
+          <article class="project-detail" id="project-detail">
+            <div class="detail-image-wrap">
+              <img id="detail-image" src="" alt="">
+            </div>
+
+            <div class="detail-head">
+              <div>
+                <p class="detail-tag" id="detail-tag"></p>
+                <h3 id="detail-title"></h3>
+                <p class="detail-subtitle" id="detail-subtitle"></p>
+              </div>
+              <div class="detail-meta">
+                <span id="detail-date"></span>
+                <span id="detail-role"></span>
+              </div>
+            </div>
+
+            <p class="detail-summary" id="detail-summary"></p>
+
+            <ul class="detail-highlights" id="detail-highlights"></ul>
+
+            <div class="stack-block">
+              <h4>Stack</h4>
+              <div class="stack-pills" id="detail-stack"></div>
+            </div>
+
+            <div class="metrics-grid" id="detail-metrics"></div>
+
+            <div class="detail-actions" id="detail-actions"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">How I work</p>
+          <h2>What I bring to a team</h2>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability">
+            <h3>Platform thinking</h3>
+            <p>I like systems that stay readable as products grow: clear service boundaries, disciplined schemas, deliberate auth flows, and less hidden coupling.</p>
+          </article>
+          <article class="capability">
+            <h3>Backend breadth</h3>
+            <p>I am comfortable across API gateways, auth, data workflows, notifications, async jobs, search, admin operations, and cross-service communication.</p>
+          </article>
+          <article class="capability">
+            <h3>Product awareness</h3>
+            <p>I do not build backend systems in isolation. I think about how operators, admins, and end users actually feel the output of the system.</p>
+          </article>
+          <article class="capability">
+            <h3>Delivery discipline</h3>
+            <p>Testing, debugging, documentation, and production behavior matter to me as much as feature speed. I like shipping work that the next engineer can trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Recent path</p>
+          <h2>Current arc</h2>
+        </div>
+
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <div>
+              <h3>Carbon Connect</h3>
+              <p>FastAPI, PostgreSQL, pgvector, Redis/Valkey, Meilisearch, async processing, AI-assisted grant workflows.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025 - 2026</span>
+            <div>
+              <h3>Point2</h3>
+              <p>NestJS microservices, Nx workspace, gRPC, Prisma, PostgreSQL, Redis, API gateway, auth, operators, bookings, admin.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2021 - Present</span>
+            <div>
+              <h3>CardinalStone</h3>
+              <p>Fintech platforms across shareholder services, research, KYC, recruitment, e-accreditation, internal processing, and customer workflows.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell contact-layout">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to backend, platform, and product engineering conversations.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:anyaelennamdi@gmail.com">anyaelennamdi@gmail.com</a>
+          <a href="https://github.com/NnamdiAnyaele">github.com/NnamdiAnyaele</a>
+          <a href="./assets/Nnamdi_Anyaele_Senior_Backend_CV.pdf">Download backend CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
