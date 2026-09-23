@@ -111,7 +111,7 @@ const projects = [
       { value: "real-time", label: "interaction model" },
       { value: "commerce", label: "product domain" }
     ],
-    actions: [{ label: "Open live project", href: "https://app-staging.smartdeals.com.ng", primary: true }]
+    actions: [{ label: "Open live project", href: "https://app.smartdeals.com.ng/", primary: true }]
   },
   {
     id: "musicbox",
